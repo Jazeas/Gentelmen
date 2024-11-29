@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элементы по два в ряд</title>
+    <style> 
+    body, html {
+            margin: 0; 
+            height: 100%; 
+        }
+body {
+    background-image: url(https://avatars.mds.yandex.net/i?id=4f7fee41f3f10f1bc08a80585c07df25_l-5282186-images-thumbs&n=13);
+}
+header {
+            background-color: #ffffff; 
+            color: rgb(146, 146, 146);           
+            width: 99.3%;          
+            height: 10vh;        
+            display: flex;        
+            align-items: center;  
+            justify-content: flex-start;
+            
+        }
+.wrapper {
+     display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    
+}
+.block {
+     display: inline-block;
+
+     margin: 2px;
+     width: 20%; 
+    aspect-ratio: 1.5; 
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+    border-radius: 15px 0 15px 0 ;
+    border: 4px solid aqua;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+.text {
+    padding-left: 10px;
+}
+.size {
+    font-size: 50px;
+}
+.sizebox {
+    font-size: 20px; color: gray;
+}
+@media (max-width: 768px) {
+            
+    .size {font-size: 20px;} 
+    .sizebox {font-size: 8px;} }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+            
+    .size {
+        font-size: 40px;
+    }
+}    
+
+
+    </style>
+    <header style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: left;" class="text">Logo</header>
+</head>
+<body>
+    <body>
+        <div class="wrapper">
+          <div class="block" ><span class="size" >01</span><p class="sizebox"><i class="sizebox"> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+          <div class="block" ><span class="size" >02</span><p class="sizebox"><i> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+        </div>
+        <div class="wrapper">
+            <div class="block" ><span class="size" >03</span><p class="sizebox"><i> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+            <div class="block" ><span class="size" >04</span><p class="sizebox"><i> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+          </div>
+          <div class="wrapper">
+            <div class="block" ><span class="size" >05</span><p class="sizebox"><i> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+            <div class="block" ><span class="size" >06</span><p class="sizebox"><i> Просто текст для примера. Тут ничего нет, абсолютно ничего, пусто, забыли дописать. Допишем</i></p></div>
+          </div>
+      </body>
+      
+</body>
+</html>
